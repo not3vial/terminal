@@ -1,0 +1,4 @@
+struct SingleLineFile
+{
+    /* data */
+};
