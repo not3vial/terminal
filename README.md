@@ -1,4 +1,4 @@
-```markdown
+
 # Virtual Terminal — учебный проект
 
 ## Сборка и запуск
