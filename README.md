@@ -7,6 +7,12 @@ g++ main.cpp -o terminal
 ./terminal
 ```
 
+## Через Makefile
+```bash
+make all
+./terminal
+```
+
 ## Поддерживаемые команды
 | Команда               | Действие |
 |-----------------------|----------|
