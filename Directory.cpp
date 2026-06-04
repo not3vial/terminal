@@ -58,7 +58,8 @@ struct Directory : public Entry {
         );
     }
 
-    Entry* find(const std::string& name, bool includeHidden = false) const {
+    Entry* find(const std::string& name, bool includeHidden = false) const 
+    {
         for (auto* child : children_) {
             if (!includeHidden && !child->isHidden()) {
                 if (child->getName() == name)
@@ -68,7 +69,9 @@ struct Directory : public Entry {
             else if (includeHidden) {
                 if (child->getName() == name)
                     return child;
-                if (!child->getName().empty() && child->getName()[0] == '.' && child->getName().substr(1) == name)
+                if (!child->getName().empty() && 
+                child->getName()[0] == '.' && 
+                child->getName().substr(1) == name)
                     return child;
             }
         }

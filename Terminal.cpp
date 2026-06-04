@@ -117,7 +117,9 @@ struct Terminal {
 
             Entry* child = current->find(token, false);
             if (!child || !child->isDirectory()) {
-                std::cerr << "cd: " << token << ": No such directory\n";
+                std::cerr << "cd: " 
+                          << token 
+                          << ": No such directory\n";
                 while (cwd_path_.back() != current)
                     cwd_path_.pop_back();
                 return;
